@@ -23,13 +23,13 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Visarth Veda Detox Foot Pads – Lighter Mornings, ₹999/Month" },
+      { title: "Visarth Veda Detox Foot Pads – Lighter Mornings, ₹1499/45 Days" },
       {
         name: "description",
         content:
-          "Gym jaake bhi weight loss nahi ho raha? Visarth Veda Detox Foot Pads — overnight wellness routine for lighter, fresher mornings. 1 month supply ₹999.",
+          "Gym jaake bhi weight loss nahi ho raha? Visarth Veda Detox Foot Pads — overnight wellness routine for lighter, fresher mornings. 45 Days Supply ₹1499.",
       },
-      { property: "og:title", content: "Visarth Veda Detox Foot Pads – ₹999" },
+      { property: "og:title", content: "Visarth Veda Detox Foot Pads – ₹1499" },
       {
         property: "og:description",
         content:
@@ -257,7 +257,7 @@ function Index() {
           address: form.address,
           pincode: form.pincode,
           productName: "Visarth Veda Detox Foot Pads",
-          price: "999",
+          price: "1499",
           submittedAt: new Date().toISOString(),
         },
       });
@@ -293,7 +293,7 @@ function Index() {
       trackEvent("Purchase", {
         content_name: "motherveda_foot_detox_patch",
         content_category: "detox_patch",
-        value: 999.00,
+        value: 1499.00,
         currency: "INR",
       });
     } catch (err) {
@@ -415,7 +415,7 @@ function Index() {
     { q: "Kab use karna hai?", a: "Raat ko sone se pehle apply karein aur subah remove karein." },
     {
       q: "Kitne din use karna chahiye?",
-      a: "Consistent 1 month routine recommended hai.",
+      a: "Consistent 45 days routine recommended hai.",
     },
     {
       q: "Kya ye pills ya drink hai?",
@@ -427,7 +427,7 @@ function Index() {
     },
   ];
 
-  const trustBadges = ["No Pills", "Night Routine", "Lighter Morning Support", "1 Month Supply", "₹999 Only"];
+  const trustBadges = ["No Pills", "Night Routine", "Lighter Morning Support", "45 Days Supply", "₹1499 Only"];
 
   const ReviewsBlock = (
     <section id="reviews" className="bg-beige py-6 sm:py-10">
@@ -498,7 +498,7 @@ function Index() {
         </div>
 
         <div className="mt-12 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
-          {["1 Month Routine", "No Pills", "Easy Night Use", "Wellness Support", "₹999 Only"].map((t) => (
+          {["45 Days Routine", "No Pills", "Easy Night Use", "Wellness Support", "₹1499 Only"].map((t) => (
             <span key={t} className="rounded-full border border-herb/30 bg-card px-4 py-2 text-xs font-semibold text-herb shadow-card sm:text-sm">
               ✓ {t}
             </span>
@@ -506,8 +506,8 @@ function Index() {
         </div>
 
         <div className="mt-10 text-center">
-          <CTAButton>Start Your 1 Month Routine – ₹999</CTAButton>
-          <p className="mt-3 text-xs text-muted-foreground">COD available • 1 Month Supply • Easy Night Routine</p>
+          <CTAButton>Start Your 45 Days Routine – ₹1499</CTAButton>
+          <p className="mt-3 text-xs text-muted-foreground">COD available • 45 Days Supply • Easy Night Routine</p>
         </div>
       </div>
     </section>
@@ -564,7 +564,7 @@ function Index() {
             </div>
 
             <ul className="mx-auto mt-6 grid max-w-md gap-2.5 text-sm font-medium text-foreground sm:text-base md:mx-0 md:max-w-none">
-              {["No pills, no drinks", "Works while you sleep", "Supports lighter morning feeling", "Helps reduce bloated/heavy feeling", "1 month supply only ₹999"].map((b) => (
+              {["No pills, no drinks", "Works while you sleep", "Supports lighter morning feeling", "Helps reduce bloated/heavy feeling", "45 days supply only ₹1499"].map((b) => (
                 <li key={b} className="flex items-start gap-2.5 text-left">
                   <span className="mt-0.5 flex h-5 w-5 flex-none items-center justify-center rounded-full bg-herb text-[11px] font-bold text-primary-foreground">✓</span>
                   {b}
@@ -573,7 +573,7 @@ function Index() {
             </ul>
 
             <div className="mt-7 flex flex-col items-center gap-3 sm:flex-row md:items-start md:justify-start">
-              <CTAButton>Start 1 Month Routine – ₹999</CTAButton>
+              <CTAButton>Start 45 Days Routine – ₹1499</CTAButton>
               <div className="flex items-center gap-2 text-xs text-muted-foreground">
                 <span className="text-gold">★★★★★</span> 4.8 · Loved by 10,000+ users
               </div>
@@ -589,8 +589,8 @@ function Index() {
             </div>
             <div className="absolute -bottom-5 left-4 right-4 mx-auto flex max-w-md items-center justify-between rounded-2xl bg-card px-4 py-3 shadow-card sm:left-auto sm:-right-4 sm:max-w-xs">
               <div>
-                <p className="text-[11px] uppercase tracking-wider text-muted-foreground">1 Month Supply</p>
-                <p className="text-2xl font-extrabold text-herb">₹999</p>
+                <p className="text-[11px] uppercase tracking-wider text-muted-foreground">45 Days Supply</p>
+                <p className="text-2xl font-extrabold text-herb">₹1499</p>
               </div>
               <button type="button" onClick={openOrder} className="rounded-full bg-herb px-4 py-2 text-xs font-bold text-primary-foreground animate-cta-shake">Buy Now</button>
             </div>
@@ -599,7 +599,7 @@ function Index() {
 
         <div className="relative mx-auto max-w-7xl px-4 pb-6 sm:px-6">
           <div className="mx-auto max-w-3xl overflow-hidden rounded-3xl shadow-soft ring-1 ring-herb-deep/10">
-            <img src={productBoxImg} alt="Visarth Veda Foot Detox Patch product box with 30 pads" width={1280} height={1280} className="h-full w-full object-cover" loading="lazy" />
+            <img src={productBoxImg} alt="Visarth Veda Foot Detox Patch product box with 45 pads" width={1280} height={1280} className="h-full w-full object-cover" loading="lazy" />
           </div>
         </div>
 
@@ -708,7 +708,7 @@ function Index() {
               ))}
             </div>
             <div className="mt-7">
-              <CTAButton>Get Yours – ₹999</CTAButton>
+              <CTAButton>Get Yours – ₹1499</CTAButton>
             </div>
           </div>
         </div>
@@ -746,7 +746,7 @@ function Index() {
               </ul>
             </div>
           </div>
-          <div className="mt-10 text-center"><CTAButton>Start My 1 Month Routine</CTAButton></div>
+          <div className="mt-10 text-center"><CTAButton>Start My 45 Days Routine</CTAButton></div>
         </div>
       </section>
 
@@ -834,7 +834,7 @@ function Index() {
         <div className="absolute -top-32 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-herb-deep/10 blur-3xl" />
         <div className="relative mx-auto max-w-5xl px-4 sm:px-6">
           <SectionTitle kicker="Limited Stock · Fat-Loss Support">
-            Start Your <span className="text-herb">1 Month Fat-Loss Support</span> Routine
+            Start Your <span className="text-herb">45 Days Fat-Loss Support</span> Routine
           </SectionTitle>
 
           <div className="mt-12 overflow-hidden rounded-[2rem] bg-card shadow-soft ring-1 ring-herb-deep/10">
@@ -848,12 +848,12 @@ function Index() {
               <div className="p-8 text-center sm:p-10 md:text-left">
                 <Badge>Best Value Pack</Badge>
                 <h3 className="mt-4 font-display text-3xl font-bold text-foreground">Visarth Veda Detox Foot Pads</h3>
-                <p className="text-sm text-muted-foreground">1 Month Supply · 30 Pads</p>
+                <p className="text-sm text-muted-foreground">45 Days Supply · 45 Pads</p>
 
                 <div className="mt-5 flex items-end justify-center gap-3 md:justify-start">
-                  <span className="text-5xl font-black text-herb">₹999</span>
-                  <span className="mb-2 text-lg text-muted-foreground line-through">₹1,799</span>
-                  <span className="mb-2 rounded-full bg-gold/30 px-2.5 py-1 text-xs font-bold text-ink">Save 44%</span>
+                  <span className="text-5xl font-black text-herb">₹1499</span>
+                  <span className="mb-2 text-lg text-muted-foreground line-through">₹2,499</span>
+                  <span className="mb-2 rounded-full bg-gold/30 px-2.5 py-1 text-xs font-bold text-ink">Save 40%</span>
                 </div>
 
                 <ul className="mx-auto mt-6 max-w-md space-y-2.5 text-sm md:mx-0">
@@ -866,7 +866,7 @@ function Index() {
                 </ul>
 
                 <button type="button" onClick={openOrder} className="mt-7 flex w-full items-center justify-center rounded-full bg-gradient-herb px-8 py-4 text-base font-bold text-primary-foreground shadow-soft animate-cta-shake hover:scale-[1.03] transition-transform">
-                  Order Now – ₹999 →
+                  Order Now – ₹1499 →
                 </button>
                 <p className="mt-3 text-center text-xs font-semibold text-destructive">⚡ Limited stock available for this batch</p>
               </div>
@@ -908,11 +908,11 @@ function Index() {
             Ab Heavy Morning Ko <span className="text-gold">Normal Mat Samjho</span>
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base sm:text-lg">
-            Start Visarth Veda Detox Foot Pads 1 month routine and support your fat-loss journey with
+            Start Visarth Veda Detox Foot Pads 45 days routine and support your fat-loss journey with
             lighter, fresher mornings.
           </p>
           <button type="button" onClick={openOrder} className="mt-8 inline-flex items-center justify-center rounded-full bg-gold px-10 py-5 text-lg font-bold text-ink shadow-soft animate-cta-shake hover:scale-[1.03] transition-transform">
-            Get 1 Month Supply – ₹999 →
+            Get 45 Days Supply – ₹1499 →
           </button>
           <div className="mt-6 flex flex-wrap justify-center gap-2">
             {trustBadges.map((t) => (
@@ -953,8 +953,8 @@ function Index() {
               <p className="font-mono text-base font-bold leading-tight tabular-nums">{timer}</p>
             </div>
             <div className="hidden sm:flex flex-col">
-              <p className="text-[10px] uppercase tracking-wider text-muted-foreground leading-none">1 Month Supply</p>
-              <p className="text-lg font-black leading-tight text-herb">₹999 <span className="text-xs font-medium text-muted-foreground line-through">₹1,799</span></p>
+              <p className="text-[10px] uppercase tracking-wider text-muted-foreground leading-none">45 Days Supply</p>
+              <p className="text-lg font-black leading-tight text-herb">₹1499 <span className="text-xs font-medium text-muted-foreground line-through">₹2,499</span></p>
             </div>
           </div>
           <button
@@ -962,7 +962,7 @@ function Index() {
             onClick={openOrder}
             className="ml-auto flex-1 sm:flex-none rounded-full bg-gradient-herb px-5 py-3 text-center text-sm font-bold text-primary-foreground shadow-soft animate-cta-shake sm:px-8"
           >
-            Order Now – ₹999 →
+            Order Now – ₹1499 →
           </button>
         </div>
       </div>
@@ -986,7 +986,7 @@ function Index() {
               <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-gold">Complete Your Order</p>
               <h3 className="mt-1 font-display text-xl font-bold sm:text-2xl">Cash On Delivery (COD) Order Form</h3>
               <div className="mt-3 flex flex-wrap items-center gap-2 text-xs">
-                <span className="rounded-full bg-white/15 px-2.5 py-1 font-semibold">₹999 · 1 Month Supply</span>
+                <span className="rounded-full bg-white/15 px-2.5 py-1 font-semibold">₹1499 · 45 Days Supply</span>
                 <span className="rounded-full bg-gold px-2.5 py-1 font-bold text-ink">⏳ {timer}</span>
                 <span className="rounded-full bg-white/15 px-2.5 py-1 font-semibold">💵 COD</span>
               </div>
@@ -1054,7 +1054,7 @@ function Index() {
                   type="submit"
                   className="mt-2 flex w-full items-center justify-center rounded-full bg-gradient-herb px-8 py-4 text-base font-black text-primary-foreground shadow-soft animate-cta-shake hover:scale-[1.02] active:scale-[0.98] transition-transform"
                 >
-                  Place Order – ₹999 (COD) →
+                  Place Order – ₹1499 (COD) →
                 </button>
 
                 <p className="text-center text-xs text-muted-foreground">

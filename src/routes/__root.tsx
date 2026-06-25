@@ -73,7 +73,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Visarth Veda Detox Foot Pads – Lighter Mornings, ₹999/Month" },
+      { title: "Visarth Veda Detox Foot Pads – Lighter Mornings, ₹1499/45 Days" },
       { name: "description", content: "Visarth Veda Ayurveda offers detox foot pads to support your wellness routine and promote lighter mornings." },
       { name: "author", content: "Visarth Veda" },
       { property: "og:title", content: "Visarth Veda Detox Foot Pads" },
