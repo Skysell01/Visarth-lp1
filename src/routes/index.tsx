@@ -198,7 +198,7 @@ function Index() {
       setOrderOpen(true);
       try {
         trackEvent("InitiateCheckout", {
-          content_name: "motherveda_foot_detox_patch",
+          content_name: "visarth_veda_detox_foot_pads",
           content_category: "detox_patch",
         });
       } catch (err) {
@@ -282,7 +282,7 @@ function Index() {
     // Fire Meta Pixel Lead and Purchase events on successful order placement
     try {
       trackEvent("Lead", {
-        content_name: "motherveda_foot_detox_patch",
+        content_name: "visarth_veda_detox_foot_pads",
         content_category: "detox_patch",
       });
     } catch (err) {
@@ -291,7 +291,7 @@ function Index() {
 
     try {
       trackEvent("Purchase", {
-        content_name: "motherveda_foot_detox_patch",
+        content_name: "visarth_veda_detox_foot_pads",
         content_category: "detox_patch",
         value: 1499.00,
         currency: "INR",
